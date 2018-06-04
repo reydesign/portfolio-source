@@ -1,0 +1,103 @@
+@-webkit-keyframes example {
+    0% { -webkit-transform: translateY(-50px); transform: translateY(-50px);}
+    100% {-webkit-transform: translateY(0);transform: translateY(0);}
+}
+@keyframes example {
+    0% { -webkit-transform: translateY(-50px); transform: translateY(-50px);}
+    100% {-webkit-transform: translateY(0);transform: translateY(0);}
+}
+
+.navBar {
+	ul {
+		font-family: $font-titles;
+		font-size: 24px;
+		color: white;
+    }
+
+	li {
+		display: inline;
+		padding: 0 10px 0 10px;
+		height: 100%;
+
+		a::after{
+			content: '';
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 0;
+			height: 2px;
+			background: $goldenAlike;
+			-webkit-transition: width .8s;
+			transition: width .8s;
+		}
+
+        a::before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: $goldenAlike;
+            -webkit-transition: width .8s;
+            transition: width .8s;
+        }
+
+		a:hover::before, a:hover::after{
+			width: 100%;
+		}
+
+        a:hover .navLetter{
+            color: $goldenAlike;
+        }
+	}
+}
+
+    
+
+.navBar{
+    position: absolute;
+    text-align: right;
+    height: 40px;
+    bottom: 0;
+    right: 0;
+}
+
+.fixedNav .navBar{
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    top: 0;
+    margin-right: 0;
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
+    -webkit-animation: example;
+    animation: example;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    z-index: 1;
+}
+
+.mainNav > li:first-child{
+    float: left;
+}
+.logo{
+    opacity: 0;
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s;
+}	
+
+.fixedNav .logo{
+    opacity: 1;
+}
+
+.navLetter{
+    color: $whiteGolden;
+}
+
+.mobileNav{
+    display: none;
+}
+
+
+

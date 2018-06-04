@@ -1,0 +1,604 @@
+/* ---------- COLOR VARIABLES ----------
+************************************* */
+/* ------------ TYPOGRAPHY ------------
+************************************* */
+/* ---------- COLOR VARIABLES ----------
+************************************* */
+/* ------------ TYPOGRAPHY ------------
+************************************* */
+@import url("https://fonts.googleapis.com/css?family=Merriweather");
+.headerText {
+  font-family: "Alfa Slab One", cursive;
+  color: white;
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 5vw;
+  font-size: 60px; }
+
+.linear {
+  background: linear-gradient(90deg, #173e43, #ffa502);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.underHeaderText {
+  font-family: "Gentium Book Basic", serif;
+  color: white;
+  text-align: center;
+  font-size: 25px; }
+
+.underStarText {
+  font-family: "Alfa Slab One", cursive;
+  color: white;
+  text-align: center;
+  font-size: 15px; }
+
+.logo {
+  font-family: 'Lobster Two', cursive;
+  font-size: 28px;
+  color: #ffc864; }
+
+.aboutMeSectionTitle, .projectsSectionTitle, .skillsSectionTitle {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 4px;
+  font-weight: bold;
+  font-size: 38px; }
+
+.aboutMeSection, .bodyfont {
+  font-family: "Merriweather", serif;
+  font-size: 18px; }
+
+.skillsSectionHeader, .skillsSectionHeaderBottom {
+  font-family: "Alfa Slab One", cursive;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center; }
+
+.contactSectionTitle {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 38px; }
+
+.underNav-tab-icons {
+  font-family: "Alfa Slab One", cursive;
+  font-size: 18px;
+  color: black; }
+
+.text-container {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold; }
+
+.headline {
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  border-bottom: 1px dotted black; }
+
+footer {
+  font-family: "Raleway", sans-serif;
+  color: white;
+  font-size: 12px;
+  text-align: center; }
+
+html, body {
+  height: 100%; }
+
+.container-fluid {
+  min-height: 100%;
+  height: 100%;
+  padding: 0; }
+
+.row {
+  margin: 0 !important; }
+
+a, a:link, a:hover {
+  color: inherit;
+  position: relative;
+  text-decoration: none; }
+
+#page-mask {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none; }
+
+#map {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  background-image: url(../images/navimage.jpg);
+  background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  display: block;
+  position: relative; }
+
+.headerText {
+  padding-top: 12%; }
+
+.underStarText {
+  position: absolute;
+  bottom: 10%;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s; }
+
+@-webkit-keyframes example {
+  0% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px); }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+
+@keyframes example {
+  0% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px); }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+
+.navBar ul {
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  color: white; }
+
+.navBar li {
+  display: inline;
+  padding: 0 10px 0 10px;
+  height: 100%; }
+  .navBar li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background: #ffa502;
+    -webkit-transition: width .8s;
+    transition: width .8s; }
+  .navBar li a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #ffa502;
+    -webkit-transition: width .8s;
+    transition: width .8s; }
+  .navBar li a:hover::before, .navBar li a:hover::after {
+    width: 100%; }
+  .navBar li a:hover .navLetter {
+    color: #ffa502; }
+
+.navBar {
+  position: absolute;
+  text-align: right;
+  height: 40px;
+  bottom: 0;
+  right: 0; }
+
+.fixedNav .navBar {
+  position: fixed;
+  width: 100%;
+  background-color: black;
+  top: 0;
+  margin-right: 0;
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
+  -webkit-animation: example;
+  animation: example;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  z-index: 1; }
+
+.mainNav > li:first-child {
+  float: left; }
+
+.logo {
+  opacity: 0;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s; }
+
+.fixedNav .logo {
+  opacity: 1; }
+
+.navLetter {
+  color: #f6e58d; }
+
+.mobileNav {
+  display: none; }
+
+.aboutMeSectionTitle, .projectsSectionTitle, .skillsSectionTitle {
+  border-right: solid 4px #ffa502;
+  border-left: solid 4px #173e43;
+  border-radius: 1px;
+  margin-right: auto;
+  margin-left: auto; }
+
+.aboutMeTitleRow, .skillsTitleRow {
+  padding-top: 9%; }
+
+.projectsTitleRow {
+  padding-top: 9%;
+  background-color: #f5f5f5; }
+
+.contactTitleRow {
+  padding-top: 9%;
+  background-color: #20374d; }
+
+.skillsSectionRow {
+  padding: 9% 0 5% 0; }
+
+.aboutMeSectionRow {
+  padding-top: 5%;
+  padding-bottom: 5%; }
+
+.myPhoto {
+  padding-bottom: 3%; }
+
+.skillsSectionHeader {
+  padding-bottom: 6%; }
+
+.skillsSectionHeaderBottom {
+  padding-bottom: 6%;
+  padding-top: 5%; }
+
+.aboutMeSection {
+  padding-left: 5%;
+  padding-right: 5%; }
+
+.projectsSectionRow {
+  padding: 10% 0 25% 0;
+  background-color: #f5f5f5; }
+
+.contactSectionRow {
+  padding: 4% 0 5% 0;
+  background-color: #20374d; }
+
+.underNav-tab-icons {
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.08), transparent);
+  color: black;
+  padding-top: 10px;
+  margin: 1% auto 0 auto;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out; }
+  .underNav-tab-icons:nth-child(2):hover:after {
+    background: linear-gradient(to top, transparent, rgba(255, 165, 2, 0.12));
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3), 0 3px 6px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    bottom: -100px;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    left: 0;
+    right: 0;
+    border: 1px solid black;
+    content: "Biggest challenge: to create an algorithm for generating slab's IDs and also to integrate website with Firebase in general."; }
+  .underNav-tab-icons:nth-child(1):hover:after {
+    background: linear-gradient(to top, transparent, rgba(255, 165, 2, 0.12));
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3), 0 3px 6px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    bottom: -120px;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    left: 0;
+    right: 0;
+    border: 1px solid black;
+    content: "Biggest challenge: to succesfully implement search input that returns results live on screen."; }
+  .underNav-tab-icons:nth-child(3):hover:after {
+    background: linear-gradient(to top, transparent, rgba(255, 165, 2, 0.12));
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3), 0 3px 6px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    bottom: -100px;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    left: 0;
+    right: 0;
+    border: 1px solid black;
+    content: "Biggest challenge: to style everything apriopriately so that project is well structured and doesn't break."; }
+  .underNav-tab-icons:nth-child(4):hover:after {
+    background: linear-gradient(to top, transparent, rgba(255, 165, 2, 0.12));
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3), 0 3px 6px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    bottom: -150px;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    left: 0;
+    right: 0;
+    border: 1px solid black;
+    content: "Biggest challenge: to understand props flow and get used to React syntax (my first ever React project)."; }
+  .underNav-tab-icons:nth-child(5):hover:after {
+    background: linear-gradient(to top, transparent, rgba(255, 165, 2, 0.12));
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3), 0 3px 6px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    bottom: -100px;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    left: 0;
+    right: 0;
+    border: 1px solid black;
+    content: "Biggest challenge: to manipulate table with jQuery and integrate table data with browser's local storage."; }
+
+.techs {
+  border-right-width: 2px;
+  border-right-style: solid;
+  -o-border-image: linear-gradient(to bottom, #3fb0ac, transparent) 1 100%;
+  border-image: -webkit-gradient(linear, left top, left bottom, from(#3fb0ac), to(transparent)) 1 100%;
+  border-image: linear-gradient(to bottom, #3fb0ac, transparent) 1 100%;
+  text-align: center;
+  position: relative; }
+  .techs:last-child {
+    border: none; }
+  .techs:nth-child(5n) {
+    border: none; }
+  .techs img {
+    opacity: 1;
+    -webkit-transition: opacity 0.7s;
+    transition: opacity 0.7s; }
+  .techs:hover img {
+    opacity: .3; }
+  .techs:hover .text-container {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    opacity: 1; }
+
+.text-container {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  z-index: 99;
+  opacity: 0;
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s; }
+
+.contactSpace {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+  background-color: #34495e;
+  border-radius: 5px; }
+
+.border-bot {
+  height: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #ffa502;
+  border-radius: 5px; }
+
+.hidden {
+  display: none; }
+
+.showcaseImage {
+  position: absolute;
+  left: 4%;
+  margin: 0 auto;
+  border-radius: 4px;
+  z-index: 10; }
+
+footer {
+  height: 40px;
+  background-color: #34495e; }
+
+footer p {
+  padding-top: 10px;
+  margin-bottom: 0; }
+
+.fa-facebook, .fa-linkedin, .fa-github-square {
+  font-size: 3em;
+  margin-left: 10%;
+  margin-top: 8%;
+  color: #f6e58d;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s; }
+
+.fa-facebook:hover {
+  color: #3b5998; }
+
+.fa-linkedin:hover {
+  color: #0e76a8; }
+
+.fa-github-square:hover {
+  color: #999; }
+
+.arrowIcon {
+  padding-left: 5%;
+  position: absolute;
+  bottom: 10%; }
+
+.fa-bars {
+  opacity: 0;
+  cursor: pointer; }
+
+.fa-arrow-alt-circle-down {
+  color: white;
+  font-size: 38px;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s; }
+  .fa-arrow-alt-circle-down:hover {
+    color: #ffa502;
+    font-size: 45px;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+.flags {
+  position: absolute;
+  bottom: 10%; }
+  .flags img:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+
+.htm, .cs, .js {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+.htm::-webkit-progress-bar, .cs::-webkit-progress-bar, .js::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset; }
+
+.htm::-webkit-progress-value {
+  background-image: -webkit-linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%), -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), -webkit-linear-gradient(left, #e33d26, #f16529);
+  border-radius: 2px;
+  background-size: 35px 20px, 100% 100%, 100% 100%; }
+
+.cs::-webkit-progress-value {
+  background-image: -webkit-linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%), -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), -webkit-linear-gradient(left, #1758a7, #379ad6);
+  border-radius: 2px;
+  background-size: 35px 20px, 100% 100%, 100% 100%; }
+
+.js::-webkit-progress-value {
+  background-image: -webkit-linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%), -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), -webkit-linear-gradient(left, #e5a228, #f1bf26);
+  border-radius: 2px;
+  background-size: 35px 20px, 100% 100%, 100% 100%; }
+
+.percents {
+  padding-bottom: 5%; }
+
+.me {
+  -webkit-filter: brightness(80%);
+  filter: brightness(80%);
+  border: 3px solid black; }
+
+.skillBarsHTML, .skillBarsCSS, .skillBarsJS {
+  text-align: center; }
+
+/* ---------- COLOR VARIABLES ----------
+************************************* */
+/* ------------ TYPOGRAPHY ------------
+************************************* */
+.submitBtn {
+  height: 30px;
+  width: 100px;
+  background-color: #20374d;
+  color: white;
+  font-weight: bold;
+  border: none;
+  margin-top: 4px;
+  float: right;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s; }
+  .submitBtn:hover {
+    color: #20374d;
+    background-color: white; }
+
+/* ---------- COLOR VARIABLES ----------
+************************************* */
+/* ------------ TYPOGRAPHY ------------
+************************************* */
+input, label, textarea, .socialMedia {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  margin-top: 3%;
+  color: white; }
+
+@media screen and (max-width: 360px) {
+  .flags {
+    position: absolute;
+    bottom: 20%; }
+  .mainNav > li:not(:last-child):not(:first-child) {
+    display: none; }
+  .fa-bars {
+    opacity: 1; }
+  .underStarText {
+    display: none; }
+  .techs {
+    border: none; }
+  .underNav-tab-icons:hover {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; }
+  .mobileNav {
+    background-color: rgba(0, 0, 0, 0.65);
+    border-bottom-left-radius: 15px;
+    height: auto;
+    position: fixed;
+    top: 40px;
+    right: 0;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: none; }
+  .topFix .mobileNav {
+    background-color: rgba(0, 0, 0, 0.65);
+    border-top-left-radius: 15px;
+    height: auto;
+    position: absolute;
+    top: -450%;
+    right: 0;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: none; }
+  .mobileNav > li {
+    display: block; }
+  .mobileNav.show {
+    display: block; }
+  .aboutMeSectionTitle, .skillsSectionTitle, .projectsSectionTitle {
+    font-size: 20px; }
+  .showcaseImage[style] {
+    position: fixed;
+    max-width: 95% !important;
+    top: 50%;
+    left: 0;
+    bottom: 50%;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 4px;
+    z-index: 10; } }
+
+@media screen and (max-width: 860px) and (min-width: 361px) {
+  .mainNav > li:not(:last-child):not(:first-child) {
+    display: none; }
+  .fa-bars {
+    opacity: 1; }
+  .techs {
+    border: none; }
+  .flags {
+    position: absolute;
+    top: 1%; }
+  .aboutMeSectionTitle, .skillsSectionTitle, .projectsSectionTitle {
+    font-size: 20px; }
+  .mobileNav {
+    background-color: rgba(0, 0, 0, 0.65);
+    border-bottom-left-radius: 15px;
+    height: auto;
+    position: fixed;
+    top: 40px;
+    right: 0;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: none; }
+  .underNav-tab-icons {
+    padding-top: 20px; }
+  .topFix .mobileNav {
+    background-color: rgba(0, 0, 0, 0.65);
+    border-top-left-radius: 15px;
+    height: auto;
+    position: absolute;
+    top: -580%;
+    right: 0;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: none; }
+  .mobileNav > li {
+    display: block; }
+  .mobileNav.show {
+    display: block; }
+  .showcaseImage[style] {
+    position: fixed;
+    max-width: 95% !important;
+    top: 50%;
+    left: 0;
+    bottom: 50%;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 4px;
+    z-index: 10; } }

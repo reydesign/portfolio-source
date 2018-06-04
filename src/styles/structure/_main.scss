@@ -1,0 +1,206 @@
+
+.aboutMeSectionTitle, .projectsSectionTitle, .skillsSectionTitle{
+    border-right: solid 4px $goldenAlike;
+    border-left: solid 4px $borderColor;
+    border-radius: 1px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.aboutMeTitleRow, .skillsTitleRow{
+    padding-top: 9%;
+}
+.projectsTitleRow{
+    padding-top: 9%;
+    background-color: $projectsBlockColor;
+}
+.contactTitleRow{
+    padding-top: 9%;
+    background-color: $contactBlockColor;
+}
+
+.skillsSectionRow{
+    padding: 9% 0 5% 0;
+}
+
+.aboutMeSectionRow{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.myPhoto{
+    padding-bottom: 3%;
+}
+
+.skillsSectionHeader{
+    padding-bottom: 6%;
+}
+
+.skillsSectionHeaderBottom{
+    padding-bottom: 6%;
+    padding-top: 5%;
+}
+
+.aboutMeSection{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.projectsSectionRow{
+    padding: 10% 0 25% 0;
+    background-color: $projectsBlockColor;
+}
+.contactSectionRow{
+    padding: 4% 0 5% 0;
+    background-color: $contactBlockColor;
+}
+
+.underNav-tab-icons{
+    // max-width: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,.0), rgba(0,0,0,.08), rgba(0,0,0,.0));
+    color: black;
+    padding-top: 10px;
+    margin: 1% auto 0 auto;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+
+    &:nth-child(2):hover:after{
+        background: linear-gradient(to top, rgba(0,0,0,.0), rgba(255,165,2,.12));
+        box-shadow: 0 2px 10px rgba(0,0,0,0.3), 0 3px 6px rgba(0,0,0,0.2);
+        position: absolute;
+        bottom: -100px;
+        font-family: $font-titles;
+        font-size: 16px;
+        left: 0;
+        right: 0;
+        border: 1px solid black;
+        content: "Biggest challenge: to create an algorithm for generating slab's IDs and also to integrate website with Firebase in general.";
+    }
+    &:nth-child(1):hover:after{
+        background: linear-gradient(to top, rgba(0,0,0,.0), rgba(255,165,2,.12));
+        box-shadow: 0 2px 10px rgba(0,0,0,0.3), 0 3px 6px rgba(0,0,0,0.2);
+        position: absolute;
+        bottom: -120px;
+        font-family: $font-titles;
+        font-size: 16px;
+        left: 0;
+        right: 0;
+        border: 1px solid black;
+        content: "Biggest challenge: to succesfully implement search input that returns results live on screen.";
+    }
+    &:nth-child(3):hover:after{
+        background: linear-gradient(to top, rgba(0,0,0,.0), rgba(255,165,2,.12));
+        box-shadow: 0 2px 10px rgba(0,0,0,0.3), 0 3px 6px rgba(0,0,0,0.2);
+        position: absolute;
+        bottom: -100px;
+        font-family: $font-titles;
+        font-size: 16px;
+        left: 0;
+        right: 0;
+        border: 1px solid black;
+        content: "Biggest challenge: to style everything apriopriately so that project is well structured and doesn't break.";
+    }
+    &:nth-child(4):hover:after{
+        background: linear-gradient(to top, rgba(0,0,0,.0), rgba(255,165,2,.12));
+        box-shadow: 0 2px 10px rgba(0,0,0,0.3), 0 3px 6px rgba(0,0,0,0.2);
+        position: absolute;
+        bottom: -150px;
+        font-family: $font-titles;
+        font-size: 16px;
+        left: 0;
+        right: 0;
+        border: 1px solid black;
+        content: "Biggest challenge: to understand props flow and get used to React syntax (my first ever React project).";
+    }
+    &:nth-child(5):hover:after{
+        background: linear-gradient(to top, rgba(0,0,0,.0), rgba(255,165,2,.12));
+        box-shadow: 0 2px 10px rgba(0,0,0,0.3), 0 3px 6px rgba(0,0,0,0.2);
+        position: absolute;
+        bottom: -100px;
+        font-family: $font-titles;
+        font-size: 16px;
+        left: 0;
+        right: 0;
+        border: 1px solid black;
+        content: "Biggest challenge: to manipulate table with jQuery and integrate table data with browser's local storage.";
+    }
+}
+
+.techs{
+    border-right-width: 2px;
+    border-right-style: solid;
+    -o-border-image:
+      linear-gradient(to bottom, #3fb0ac, rgba(0, 0, 0, 0)) 1 100%;
+    border-image:
+      -webkit-gradient(linear, left top, left bottom, from(#3fb0ac), to(rgba(0, 0, 0, 0))) 1 100%;
+    border-image:
+      linear-gradient(to bottom, #3fb0ac, rgba(0, 0, 0, 0)) 1 100%;
+    text-align: center;
+    position: relative;
+
+    &:last-child{
+        border: none;
+    }
+    &:nth-child(5n){
+        border: none;
+    }
+
+    img{
+        opacity: 1;
+        -webkit-transition: opacity 0.7s;
+        transition: opacity 0.7s;
+    }
+
+    &:hover img{
+        opacity: .3;
+    }
+
+    &:hover .text-container{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        opacity: 1;
+
+    }
+}
+
+.text-container{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    z-index: 99;
+    opacity: 0;
+    -webkit-transition: all 1.5s;
+    transition: all 1.5s;
+}
+
+
+.contactSpace{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    background-color: #34495e;
+    border-radius: 5px;
+}
+
+.border-bot{
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid $goldenAlike;
+    border-radius: 5px;
+}
+
+.hidden{
+    display: none;
+}
+
+.showcaseImage{
+    position: absolute;
+    left: 4%;
+    margin: 0 auto;
+    border-radius: 4px;
+    z-index: 10;
+}

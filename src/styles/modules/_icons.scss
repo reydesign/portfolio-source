@@ -1,0 +1,123 @@
+.fa-facebook, .fa-linkedin, .fa-github-square{ 
+    font-size: 3em;
+    margin-left: 10%;
+    margin-top: 8%;
+    color: #f6e58d;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
+}
+
+.fa-facebook:hover{color: #3b5998;}
+
+.fa-linkedin:hover{color: #0e76a8;}
+
+.fa-github-square:hover{color:#999}
+
+.arrowIcon{
+    padding-left: 5%;
+    position: absolute;
+    bottom: 10%;
+}
+
+.fa-bars{
+    opacity: 0;
+    cursor: pointer;
+}
+
+.fa-arrow-alt-circle-down{
+    color:white;
+    font-size: 38px;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+
+    &:hover{
+    	color: #ffa502;
+    	font-size: 45px;
+    	-webkit-transform: rotate(0deg);
+    	transform: rotate(0deg);
+    }
+}
+
+.flags{
+    position: absolute;
+    bottom: 10%;
+
+    img:hover{
+    	-webkit-transform: scale(1.1);
+    	transform: scale(1.1);
+    }
+}
+
+.htm, .cs, .js{
+    -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+}
+
+.htm::-webkit-progress-bar, .cs::-webkit-progress-bar, .js::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+.htm::-webkit-progress-value {
+  background-image:
+	   -webkit-linear-gradient(-45deg, 
+	                           transparent 33%, rgba(0, 0, 0, .1) 33%, 
+	                           rgba(0,0, 0, .1) 66%, transparent 66%),
+	   -webkit-linear-gradient(top, 
+	                           rgba(255, 255, 255, .25), 
+	                           rgba(0, 0, 0, .25)),
+	   -webkit-linear-gradient(left, #e33d26, #f16529);
+
+    border-radius: 2px; 
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+    
+}
+
+.cs::-webkit-progress-value {
+  background-image:
+	   -webkit-linear-gradient(-45deg, 
+	                           transparent 33%, rgba(0, 0, 0, .1) 33%, 
+	                           rgba(0,0, 0, .1) 66%, transparent 66%),
+	   -webkit-linear-gradient(top, 
+	                           rgba(255, 255, 255, .25), 
+	                           rgba(0, 0, 0, .25)),
+	   -webkit-linear-gradient(left, #1758a7, #379ad6);
+
+    border-radius: 2px; 
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+    
+}
+
+.js::-webkit-progress-value {
+  background-image:
+	   -webkit-linear-gradient(-45deg, 
+	                           transparent 33%, rgba(0, 0, 0, .1) 33%, 
+	                           rgba(0,0, 0, .1) 66%, transparent 66%),
+	   -webkit-linear-gradient(top, 
+	                           rgba(255, 255, 255, .25), 
+	                           rgba(0, 0, 0, .25)),
+	   -webkit-linear-gradient(left, #e5a228, #f1bf26);
+
+    border-radius: 2px; 
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+    
+}
+
+.percents{
+    padding-bottom: 5%;
+}
+
+.me{
+    -webkit-filter: brightness(80%);
+    filter: brightness(80%);
+    border: 3px solid black;
+}
+
+.skillBarsHTML, .skillBarsCSS, .skillBarsJS {
+    text-align: center;
+}

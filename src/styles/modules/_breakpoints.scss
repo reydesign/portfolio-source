@@ -1,0 +1,149 @@
+@media screen and (max-width:360px){
+
+    .flags{
+        position: absolute;
+        bottom: 20%;
+    }
+    .mainNav > li:not(:last-child):not(:first-child) {
+        display: none;
+    }
+
+
+    .fa-bars{
+        opacity: 1;
+    }
+
+    .underStarText{
+        display: none;
+    }
+
+    .techs{
+        border: none;
+    }
+
+    .underNav-tab-icons:hover{
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+
+     .mobileNav{
+        background-color: rgba(0,0,0, 0.65);
+        border-bottom-left-radius: 15px;
+        height: auto;
+        position: fixed;
+        top: 40px;
+        right: 0;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        display: none;
+    }
+
+    .topFix .mobileNav{
+        background-color: rgba(0,0,0, 0.65);
+       border-top-left-radius: 15px;
+       height: auto;
+       position: absolute;
+       top: -450%;
+       right: 0;
+       padding-top: 5%;
+       padding-bottom: 5%;
+       display: none;
+   }
+
+    .mobileNav > li {
+        display: block;
+    }
+
+     .mobileNav.show{
+        display: block;
+    }
+
+    .aboutMeSectionTitle, .skillsSectionTitle, .projectsSectionTitle{
+        font-size: 20px;
+    }
+
+     .showcaseImage[style] {
+          position: fixed;
+          max-width: 95% !important;
+          top: 50%;
+          left: 0;
+          bottom: 50%;
+          right: 0;
+         margin: 0 auto;
+         border-radius: 4px;
+         z-index: 10;
+     }
+}
+
+@media screen and (max-width:860px) and (min-width: 361px){
+
+
+    .mainNav > li:not(:last-child):not(:first-child) {
+        display: none;
+    }
+
+    .fa-bars{
+        opacity: 1;
+    }
+
+    .techs{
+        border: none;
+    }
+
+    .flags{
+        position: absolute;
+        top: 1%;
+    }
+    .aboutMeSectionTitle, .skillsSectionTitle, .projectsSectionTitle{
+        font-size: 20px;
+    }
+
+   .mobileNav{
+       background-color: rgba(0,0,0, 0.65);
+       border-bottom-left-radius: 15px;
+       height: auto;
+       position: fixed;
+       top: 40px;
+       right: 0;
+       padding-top: 5%;
+       padding-bottom: 5%;
+       display: none;
+   }
+
+   .underNav-tab-icons{
+       padding-top: 20px;
+   }
+
+   .topFix .mobileNav{
+        background-color: rgba(0,0,0, 0.65);
+       border-top-left-radius: 15px;
+       height: auto;
+       position: absolute;
+       top: -580%;
+       right: 0;
+       padding-top: 5%;
+       padding-bottom: 5%;
+       display: none;
+   }
+
+    .mobileNav > li {
+        display: block;
+    }
+    .mobileNav.show{
+    display: block;
+    }
+
+    .showcaseImage[style] {
+        position: fixed;
+        max-width: 95% !important;
+        top: 50%;
+        left: 0;
+        bottom: 50%;
+        right: 0;
+        margin: 0 auto;
+        border-radius: 4px;
+        z-index: 10;
+    }
+
+}

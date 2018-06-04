@@ -1,0 +1,91 @@
+@import '_variables';
+
+
+.headerText {
+    font-family: $font-big;
+    color: white;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 5vw;
+    font-size: 60px;
+}
+
+.linear {
+ background: linear-gradient(90deg, $borderColor, $goldenAlike);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+  }
+
+
+.underHeaderText{
+    font-family: $font-text;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+.underStarText{
+    font-family: $font-big;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+
+.logo{
+    font-family: 'Lobster Two', cursive;
+    font-size: 28px;
+    color: $logoColor;
+}
+
+.aboutMeSectionTitle, .projectsSectionTitle, .skillsSectionTitle{
+    text-align: center;
+    font-family: $font-titles;
+    letter-spacing: 4px;
+    font-weight: bold;
+    font-size: 38px;
+}
+
+.aboutMeSection, .bodyfont{
+    font-family: $font-alternative;
+    font-size: 18px;
+}
+
+.skillsSectionHeader, .skillsSectionHeaderBottom{
+    font-family: $font-big;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contactSectionTitle{
+    text-align: center;
+    font-family: $font-titles;
+    color: white;
+    font-weight: bold;
+    font-size: 38px;
+}
+
+.underNav-tab-icons{
+    font-family: $font-big;
+    font-size:18px;
+    color:black;
+}
+
+.text-container{
+    font-family: $font-titles;
+    font-weight: bold;
+}
+
+.headline{
+    font-family: $font-titles;
+    font-size: 24px;
+    border-bottom: 1px dotted black;
+}
+
+footer{
+    font-family: $font-titles;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+}
